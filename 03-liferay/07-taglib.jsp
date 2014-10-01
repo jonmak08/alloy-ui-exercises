@@ -26,3 +26,23 @@
 		<aui:button value="reset" />
 	</aui:button-row>
 </aui:form>
+
+<aui:nav-bar>
+	<aui:nav>
+		<aui:nav-item label="Item" href="#" />
+
+		<aui:nav-item label="Dropdown Menu" dropdown="<%= true %>">
+			<aui:nav-item label="Dropdown Item 1" href="#" />
+
+			<aui:nav-item label="Dropdown Item 2" href="#" />
+
+			<aui:nav-item label="Dropdown Item 3" href="#" />
+		</aui:nav-item>
+	</aui:nav>
+
+	<aui:nav-bar-search cssClass="pull-right">
+		<div class="form-search">
+			<liferay-ui:input-search name="searchQuery" />
+		</div>
+	</aui:nav-bar-search>
+</aui:nav-bar>

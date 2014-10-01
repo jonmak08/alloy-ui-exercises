@@ -216,9 +216,37 @@ Exercises using AlloyUI components inside of Liferay Portal. The content of many
 </aui:form>
 ```
 
-* Deploy this portlet and add it to your portal instance to see it running. Use your browser inspector to see how the taglib code was transformed into regular html.
+* Read about the `<aui:form>` taglib and the advantages of using its components [here](http://www.liferay.com/web/guest/community/wiki/-/wiki/Main/Alloy+UI+Forms+(aui)).
 
-* Read about the `aui` taglib and the advantages of using its components [here](http://www.liferay.com/web/guest/community/wiki/-/wiki/Main/Alloy+UI+Forms+(aui)).
+* For this next exercise, we will create a responsive navigation bar using the `<aui:nav-bar>` tag.
+   * `<aui:nav-bar>` requires an `<aui:nav>` child element to properly render navigation items.
+   * `<aui:nav-item>` elements wrap each navigation item.
+   	* `label` is for the text of the navigation item.
+   	* `href` is for the link's location.
+   	* `dropdown` is to determine whether the following child elements are to be displayed in a drop down menu.
+   * `<aui:nav-bar-search>` elements display a search bar in the navigation bar.
+
+```html
+<aui:nav-bar>
+	<aui:nav>
+		<aui:nav-item label="Item" href="#" />
+
+		<aui:nav-item label="Dropdown Menu" dropdown="<%= true %>">
+			<aui:nav-item label="Dropdown Item 1" href="#" />
+
+			<aui:nav-item label="Dropdown Item 2" href="#" />
+		</aui:nav-item>
+	</aui:nav>
+
+	<aui:nav-bar-search cssClass="pull-right">
+		<div class="form-search">
+			<liferay-ui:input-search name="searchQuery" />
+		</div>
+	</aui:nav-bar-search>
+</aui:nav-bar>
+```
+
+* Deploy this portlet and add it to your portal instance to see it running. Use your browser inspector to see how the taglib code was transformed into regular html.
 
 **Completed jsp: [07-taglib.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/07-taglib.jsp)**
 
