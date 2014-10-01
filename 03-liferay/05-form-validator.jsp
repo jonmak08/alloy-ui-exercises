@@ -15,7 +15,7 @@
 	<label for="portlet05_date">Birthday:</label>
 	<input id="portlet05_date" name="portlet05_date" placeholder="mm/dd/yyyy" type="text" />
 
-	<br>
+	<br />
 
 	<button class="btn">Submit</button>
 	<button class="btn" type="reset">Reset</button>
@@ -31,6 +31,13 @@ Then initialize AlloyUI and load a module, e.g., node.
 	new A.FormValidator(
 		{
 			boundingBox: '#portlet05_form',
+			on: {
+				submit: function(event) {
+					A.one('#portlet05_success').show();
+
+					event.validator.formEvent.halt();
+				}
+			},
 			rules: {
 				portlet05_email: {
 					email: true,
@@ -43,13 +50,6 @@ Then initialize AlloyUI and load a module, e.g., node.
 				portlet05_date: {
 					date: true,
 					required: true
-				}
-			},
-			on: {
-				submit: function(event) {
-					A.one('#portlet05_success').show();
-
-					event.validator.formEvent.halt();
 				}
 			}
 		}

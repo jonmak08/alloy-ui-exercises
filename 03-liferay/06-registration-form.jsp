@@ -5,7 +5,7 @@
 
 <div id="portlet06_progressBar"></div>
 
-<div id="portlet06_pagination" class="pagination">
+<div class="pagination" id="portlet06_pagination">
 	<ul class="pagination-content">
 		<li><a>Prev</a></li>
 		<li><a>1</a></li>
@@ -33,8 +33,10 @@
 	<form class="portlet06_form" id="portlet06_form2" onSubmit="event.preventDefault();">
 		<fieldset>
 			<label class="control-label" for="portlet06_charInput">Write a description about yourself <em>(Must be less than 160 characters)</em>:</label>
-			<textarea name="portlet06_charInput" id="portlet06_charInput"></textarea>
+			<textarea id="portlet06_charInput" name="portlet06_charInput"></textarea>
+
 			<br />
+
 			<span id="portlet06_counter"></span> characters remaining.
 		</fieldset>
 
@@ -112,6 +114,7 @@ Then initialize AlloyUI and load a module, e.g., node.
 	).render();
 
 	// Grab pages
+
 	var pages = A.all('.portlet06_page');
 
 	// Create paginator
@@ -259,10 +262,10 @@ Then initialize AlloyUI and load a module, e.g., node.
 		var messageNode = A.one('#portlet06_message');
 		var outputNode = A.one('#portlet06_output');
 
-		var cssClass = valid ? "text-success" : "text-error";
-		var messageString = valid ? "All forms are complete!" : "Please fill out the entire form!";
+		var cssClass = valid ? 'text-success' : 'text-error';
+		var messageString = valid ? 'All forms are complete!' : 'Please fill out the entire form!';
 
-		var message = A.Node.create("<div class='" + cssClass + "'>" + messageString + "</div>");
+		var message = A.Node.create('<div class="' + cssClass + '">' + messageString + '</div>');
 
 		messageNode.setHTML(message);
 

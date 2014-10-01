@@ -1,7 +1,7 @@
 Liferay
 ==================
 
-Exercises using AlloyUI components inside of Liferay Portal. The content of many of these examples is similar to excercises from the previous sections, but the format is slightly different. Instead of using regular `HTML` files, we will use `jsp` files that are used to create a custom Liferay portlet.
+Exercises using AlloyUI components inside of Liferay Portal. The content of many of these examples is similar to exercises from the previous sections, but the format is slightly different. Instead of using regular `HTML` files, we will use `jsp` files that are used to create a custom Liferay portlet.
 
 ## Table of contents
 
@@ -338,7 +338,7 @@ Exercises using AlloyUI components inside of Liferay Portal. The content of many
 
 * We have discussed previously how the `name` value is also used for the `<label>` and the `id` attributes since they are not specified. However we also mentioned that `name` and `id` are prepended with some value to make them unique to the portlet. This is good for preventing duplicate IDs, but what if we want to reference an item in the portlet? How do we know what the `id` is exactly?
 
-* As it turns out, the value they are prepended with is accesible with the `<portlet:namespace />` tag. We used this last exercise to check if the `password` values matched.
+* As it turns out, the value they are prepended with is accessible with the `<portlet:namespace />` tag. We used this last exercise to check if the `password` values matched.
 
 * Let's prove that we are finding the correct `id`. We will get the `<aui:input>` element we just added by using it's `id`, which should be `name` prepended with `<portlet:namespace />`. Then, we'll log it to the console.
 

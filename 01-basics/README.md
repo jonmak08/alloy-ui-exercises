@@ -34,8 +34,8 @@ Basic examples using YUI components. AUI is built on YUI, so it is useful to be 
 * Then, inside the `<head>` tags we load the AlloyUI seed and Bootstrap css file. The seed file contains the JavaScript that defines the AlloyUI modules and the css file provides basic styling for the page.
 
 ```html
-<script src="http://cdn.alloyui.com/2.0.0pr7/aui/aui-min.js"></script>
-<link href="http://cdn.alloyui.com/2.0.0pr7/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+<script src="http://cdn.alloyui.com/2.0.0/aui/aui-min.js"></script>
+<link href="http://cdn.alloyui.com/2.0.0/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
 ```
 
 * Now we initialize AlloyUI inside the `<script>` tags and are ready to start using AlloyUI modules.
@@ -47,8 +47,8 @@ Basic examples using YUI components. AUI is built on YUI, so it is useful to be 
 		<meta charset="UTF-8">
 		<title>AlloyUI - Setup</title>
 
-		<script src="http://cdn.alloyui.com/2.0.0pr7/aui/aui-min.js"></script>
-		<link href="http://cdn.alloyui.com/2.0.0pr7/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+		<script src="http://cdn.alloyui.com/2.0.0/aui/aui-min.js"></script>
+		<link href="http://cdn.alloyui.com/2.0.0/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
 	</head>
 	<body>
 		<h1>AlloyUI - Setup</h1>
@@ -77,8 +77,8 @@ Basic examples using YUI components. AUI is built on YUI, so it is useful to be 
 		<meta charset="UTF-8">
 		<title>AlloyUI - DOM Traversal</title>
 
-		<script src="http://cdn.alloyui.com/2.0.0pr7/aui/aui-min.js"></script>
-		<link href="http://cdn.alloyui.com/2.0.0pr7/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+		<script src="http://cdn.alloyui.com/2.0.0/aui/aui-min.js"></script>
+		<link href="http://cdn.alloyui.com/2.0.0/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
 	</head>
 	<body>
 		<h1>AlloyUI - DOM Traversal</h1>

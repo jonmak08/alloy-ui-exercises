@@ -32,14 +32,14 @@
 		'aui-tooltip',
 		function(Y) {
 
-			//Initialize Text Area Cell Editors
+			// Initialize Text Area Cell Editors
 
-			var nameEditor = new Y.TextAreaCellEditor();
 			var addressEditor = new Y.TextAreaCellEditor();
 			var cityEditor = new Y.TextAreaCellEditor();
+			var nameEditor = new Y.TextAreaCellEditor();
 			var stateEditor = new Y.TextAreaCellEditor();
 
-			//Populate columns objects with Editors
+			// Populate columns objects with Editors
 
 			var columns = [
 				{key:'name', editor: nameEditor},
@@ -48,7 +48,7 @@
 				{key:'state', editor: stateEditor}
 			];
 
-			//Create some dummy data
+			// Create some dummy data
 
 			var data = [
 				{address: '1236 Some Street', city: 'San Francisco', name: 'John A. Smith', state: 'CA'},
@@ -58,9 +58,9 @@
 				{address: '9899 Random Road', city: 'Los Angeles', name: 'Bob F. Uncle', state: 'CA'}
 			];
 
-			//Initialize the Data Table
+			// Initialize the Data Table
 
-			var dataTable = new Y.DataTable(
+			new Y.DataTable(
 				{
 					columns: columns,
 					data: data,
@@ -79,10 +79,11 @@
 						this.set('title', cssClass);
 					}
 				);
-			}
+			};
+
 			makeTitles();
 
-			//Create Modal Node
+			// Create Modal Node
 
 			var optionModal;
 			var modalContent = Y.Node.create(
@@ -101,9 +102,7 @@
 				'</div>'
 			);
 
-			var detailOpt;
-
-			//Open options Modal
+			// Open options Modal
 
 			var openOptions = function() {
 				if (!optionModal) {
@@ -116,6 +115,7 @@
 							resizable: false
 						}
 					).render();
+
 					optionModal.addToolbar(
 						[
 							{
@@ -131,10 +131,12 @@
 								on: {
 									click: function() {
 										var options = {
-											oddColor: getChosenColor(),
-											details: getChosenDetails()
+											details: getChosenDetails(),
+											oddColor: getChosenColor()
 										};
+
 										commitOptions(options);
+
 										optionModal.hide();
 									}
 								}
@@ -145,11 +147,11 @@
 				else {
 					optionModal.show();
 				}
-			}
+			};
 
-			//Create options button
+			// Create options button
 
-			var optionsButton = new Y.Button(
+			new Y.Button(
 				{
 					boundingBox: '#dataToolbar',
 					icon: 'icon-cog',
@@ -159,13 +161,14 @@
 				}
 			).render();
 
-			//Apply options to Data Table
+			// Apply options to Data Table
 
 			var commitOptions = function(options) {
 				disableTooltip();
 				disablePopover();
 				disableToolDialog();
 				makeTitles();
+
 				if (options.details == 'popover') {
 					enablePopover();
 				}
@@ -175,31 +178,33 @@
 				else {
 					enableTooltip();
 				}
+
 				colorTable(options.oddColor);
 			}
 
-			//Get selected color
+			// Get selected color
 
 			var getChosenColor = function() {
 				return Y.one('.colorOption:checked').val();
-			}
+			};
 
-			//Get selected details
+			// Get selected details
 
 			var getChosenDetails = function() {
 				return Y.one('#details').val();
-			}
+			};
 
-			//Apply color to odd table rows
+			// Apply color to odd table rows
 
 			var colorTable = function(color) {
 				Y.all('.table-odd').setStyle('backgroundColor', color);
-			}
+			};
 
-			//Create Popovers
+			// Create Popovers
 
 			var popover;
 			var popDelegate;
+
 			var enablePopover = function() {
 				popDelegate = Y.one('#myDataTable').delegate(
 					'hover',
@@ -219,24 +224,27 @@
 					},
 					'.table-cell'
 				);
-			}
+			};
+
 			enablePopover();
 
-			//Disable Popovers
+			// Disable Popovers
 
 			var disablePopover = function() {
 				if (popDelegate) {
 					popDelegate.detach();
 				}
+
 				if (popover) {
 					popover.destroy();
 				}
 			}
 
-			//Create Modals
+			// Create Modals
 
 			var toolDialog;
 			var toolDialogDelegate;
+
 			var enableToolDialog = function() {
 				toolDialogDelegate = Y.one('#myDataTable').delegate(
 					'hover',
@@ -244,6 +252,7 @@
 						if (toolDialog) {
 							toolDialog.destroy();
 						}
+
 						toolDialog = new Y.Modal(
 							{
 								bodyContent: event.target.get('title'),
@@ -255,38 +264,39 @@
 					},
 					'.table-cell'
 				);
-			}
+			};
 
-			//Disable Modals
+			// Disable Modals
 
 			var disableToolDialog = function() {
 				if (toolDialogDelegate) {
 					toolDialogDelegate.detach();
 					toolDialog.destroy();
 				}
-			}
+			};
 
-			//Create Tooltips
+			// Create Tooltips
 
 			var tooltip;
 			var enableTooltip = function() {
 				if (tooltip) {
 					tooltip.destroy();
 				}
+
 				tooltip = new Y.TooltipDelegate(
 					{
 						trigger: '.table-cell'
 					}
 				);
-			}
+			};
 
-			//Disable Tooltips
+			// Disable Tooltips
 
 			var disableTooltip = function() {
 				if (tooltip) {
 					tooltip.destroy();
 				}
-			}
+			};
 		}
 	);
 	</script>

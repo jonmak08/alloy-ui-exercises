@@ -19,8 +19,8 @@ Exercises using AlloyUI components
 * To setup your file, be sure to include the AlloyUI seed and Bootstrap css files in the `<head>` section.
 
 ```html
-<script src="http://cdn.alloyui.com/2.0.0pr7/aui/aui-min.js"></script>
-<link href="http://cdn.alloyui.com/2.0.0pr7/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+<script src="http://cdn.alloyui.com/2.0.0/aui/aui-min.js"></script>
+<link href="http://cdn.alloyui.com/2.0.0/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
 ```
 
 * In the `<body>` section, we made a `<div>` element which we will turn into our AlloyUI button.
@@ -100,7 +100,7 @@ Exercises using AlloyUI components
 
 ## 2. Char Counter
 
-* The component we will use in this exercise, `aui-char-counter`, is used in conjunction with `<input>` elements. It allows us to specify a maximum number of characters for that `<input>` and also privides a counter so that we can display the remaining number of characters.
+* The component we will use in this exercise, `aui-char-counter`, is used in conjunction with `<input>` elements. It allows us to specify a maximum number of characters for that `<input>` and also provides a counter so that we can display the remaining number of characters.
 
 * Setup your file, making sure to include the AlloyUI seed and Bootstarap css files.
 
@@ -227,7 +227,7 @@ Exercises using AlloyUI components
 * We are ready to actually create the `aui-scheduler` instance now. We use the `new` operator and specify additional attributes to configure it.
    * `boundingBox` is where the scheduler will be placed on the page.
    * `date` is the date that the scheduler first displays when it is loaded.
-   * `eventRecorder` is the event recorder we created in the last step. It is how the schdule is edited dynamically.
+   * `eventRecorder` is the event recorder we created in the last step. It is how the schedule is edited dynamically.
    * `items` are any events that you want to include automatically. In this case, they are the events we made at the beginning
    * `render` is set to `true` so that the scheduler renders when the page is loaded.
    * `views` are the different ways to display events we created in the last step and are passed in as an array
@@ -664,7 +664,7 @@ Exercises using AlloyUI components
 * Now we need to grab the `pages` we created and create the `aui-pagination` instance with the `new` operator. We set some attributes as described below, and then we `.render()` it.
    * `boundingBox` is for the position of the pagination controls on the page.
    * `circular` sets if the `Next` button can cycle back to the beginning from the end. We don't want this behavior for our form, so we set it to `false`.
-   * `contentBox` is a direct decendent of `boundingBox` and houses the content. We use the inner `<div>` element of `#pagination`
+   * `contentBox` is a direct descendant of `boundingBox` and houses the content. We use the inner `<div>` element of `#pagination`
    * `on` together with `changeRequest` specifies what happens when one of the links in the pagination controls is clicked. Basically it will `hide` the previous page and `show` the current page. If it is the last page, it will also call our `updateProgress()` function from progressbar
    * `page` sets what page will be displayed first. We set it so that page `1` is displayed.
 
