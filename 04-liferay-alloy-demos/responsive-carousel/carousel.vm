@@ -1,0 +1,22 @@
+<div class="carousel-content" id="myCarousel" >
+	<img class="carousel-item carousel-item-active" src="http://alloyui.com/carousel/img/1.jpg" />
+
+	<img class="carousel-item" src="http://alloyui.com/carousel/img/2.jpg" />
+
+	<img class="carousel-item" src="http://alloyui.com/carousel/img/3.jpg" />
+
+	<img class="carousel-item" src="http://alloyui.com/carousel/img/4.jpg" />
+</div>
+
+<script>
+	AUI().use(
+	'aui-carousel',
+		function(Y) {
+			new Y.Carousel(
+				{
+					contentBox: '#myCarousel'
+				}
+			).render();
+		}
+	);
+</script>

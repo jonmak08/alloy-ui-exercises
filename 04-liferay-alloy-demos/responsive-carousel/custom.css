@@ -1,0 +1,19 @@
+@import "mixins";
+
+.carousel-content {
+	position: relative;
+
+	.carousel-item {
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	.carousel-item-active {
+		position: relative;
+	}
+
+	@include respond-to(phone) {
+		margin: 0 -20px;
+	}
+}
