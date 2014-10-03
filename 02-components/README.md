@@ -96,7 +96,7 @@ Exercises using AlloyUI components
 
 * You can read more about the `new` operator [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) if you would like. We will be using it for all of the exercises in this section.
 
-**Completed example: [01-button.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/01-button.html)**
+**Completed example: [01-button.html](01-button.html)**
 
 ## 2. Char Counter
 
@@ -145,7 +145,7 @@ Exercises using AlloyUI components
 
 * API docs for `aui-char-counter` can be found [here](http://alloyui.com/api/classes/A.CharCounter.html).
 
-**Completed example: [02-char-counter.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/02-char-counter.html)**
+**Completed example: [02-char-counter.html](02-char-counter.html)**
 
 ## 3. Scheduler
 
@@ -276,7 +276,7 @@ Exercises using AlloyUI components
 
 * API docs for `aui-scheduler` can be found [here](http://alloyui.com/api/modules/aui-scheduler.html) and another tutorial with additional configuration options can be found [here](http://alloyui.com/tutorials/scheduler/).
 
-**Completed example: [03-scheduler.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/03-scheduler.html)**
+**Completed example: [03-scheduler.html](03-scheduler.html)**
 
 ## 4. Carousel
 
@@ -333,7 +333,7 @@ Exercises using AlloyUI components
 
 * API docs for `aui-carousel` can be found [here](http://alloyui.com/api/classes/A.Carousel.html) and another tutorial with additional configuration options can be found [here](http://alloyui.com/tutorials/carousel/).
 
-**Completed example: [04-carousel.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/04-carousel.html)**
+**Completed example: [04-carousel.html](04-carousel.html)**
 
 ## 5. Form Validator
 
@@ -488,7 +488,7 @@ Exercises using AlloyUI components
 
 * API docs for `aui-form-validator` can be found [here](http://alloyui.com/api/classes/A.FormValidator.html) and another tutorial with additional configuration options can be found [here](http://alloyui.com/tutorials/form-validator/).
 
-**Completed example: [05-form-validator.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/05-form-validator.html)**
+**Completed example: [05-form-validator.html](05-form-validator.html)**
 
 ## 6. Registration Form
 
@@ -1285,4 +1285,4 @@ after: {
 
 * Now our registration form is complete. Test it out and see all of these AlloyUI components working together.
 
-**Completed example: [06-registration-form.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/06-registration-form.html)**
+**Completed example: [06-registration-form.html](06-registration-form.html)**

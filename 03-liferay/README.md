@@ -61,14 +61,14 @@ Exercises using AlloyUI components inside of Liferay Portal. The content of many
 
 ## 1. Node
 
-* In this exercise, we want to accomplish the same task as in [node in 01-basics](https://github.com/eduardolundgren/alloy-ui-exercises/tree/master/01-basics#7-node).
+* In this exercise, we want to accomplish the same task as in [node in 01-basics](../01-basics#7-node).
    * We started with one `<div>` with the id `foo`.
    * Then we used the `node` module to create a new `<div>` object.
    * We set this new node to have a `black` background and `white` text.
    * The inner text of this new element was `I am a bar element`.
    * Lastly, we `render` the button.
 
-* Try to write the correct code for your `view.jsp` file using the description above or by adapting the code from [07-node.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/07-node.html) to this new format.
+* Try to write the correct code for your `view.jsp` file using the description above or by adapting the code from [07-node.html](../01-basics/07-node.html) to this new format.
 
 > **Hints**
 
@@ -76,61 +76,61 @@ Exercises using AlloyUI components inside of Liferay Portal. The content of many
 
 > * Set the `id` of your original `<div>` to be unique to the portlet, such as `portlet01_foo` instead instead of just `foo`. This will prevent problems with duplicate IDs later.
 
-**Completed jsp: [01-node.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/01-node.jsp)**
+**Completed jsp: [01-node.jsp](01-node.jsp)**
 
 **Completed portlet: [01-node-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/01-node-portlet)**
 
 ## 2. Button
 
-* This exercise is similar to [button in 02-components](https://github.com/eduardolundgren/alloy-ui-exercises/tree/master/02-components#1-button) but using the new `jsp` format.
+* This exercise is similar to [button in 02-components](../02-components#1-button) but using the new `jsp` format.
    * We create a `<div>` on the page which we will use to position our button
    * Then we create a `new` instance of `aui-button` which will have the `id` of that `<div>` as the `srcNode`
    * When the button is clicked, we want an alert box to show up with the message `You have clicked the button`.
    * Lastly, we render the button.
 
-* Try to write the correct code using the description above or by adapting the code from [01-button.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/02-components/01-button.html) to this new format. Like in the last exercise, prevent duplicate IDs by setting the `id` of your original `<div>` to be unique to the portlet, such as `portlet02_foo` instead of just `foo`.
+* Try to write the correct code using the description above or by adapting the code from [01-button.html](../02-components/01-button.html) to this new format. Like in the last exercise, prevent duplicate IDs by setting the `id` of your original `<div>` to be unique to the portlet, such as `portlet02_foo` instead of just `foo`.
 
-**Completed jsp: [02-button.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/02-button.jsp)**
+**Completed jsp: [02-button.jsp](02-button.jsp)**
 
 **Completed portlet: [02-button-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/02-button-portlet)**
 
 ## 3. Char Counter
 
-* In this exercise, we want to make an `<input>` field with a limited number of characters and display a counter with the number of characters remaining. You can follow the directions for [char counter in 02-components](https://github.com/eduardolundgren/alloy-ui-exercises/tree/master/02-components#2-char-counter) but with the necessary changes for the `jsp` format.
+* In this exercise, we want to make an `<input>` field with a limited number of characters and display a counter with the number of characters remaining. You can follow the directions for [char counter in 02-components](../02-components#2-char-counter) but with the necessary changes for the `jsp` format.
 
-* Use the description from `02-components` or try adapting the completed code in [02-char-counter.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/02-char-counter.html) into a portlet. Remember to use unique IDs for the `counter` and the `input` attributes.
+* Use the description from `02-components` or try adapting the completed code in [02-char-counter.html](../02-components/02-char-counter.html) into a portlet. Remember to use unique IDs for the `counter` and the `input` attributes.
 
-**Completed jsp: [03-char-counter.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/03-char-counter.jsp)**
+**Completed jsp: [03-char-counter.jsp](03-char-counter.jsp)**
 
 **Completed portlet: [03-char-counter-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/03-char-counter-portlet)**
 
 ## 4. Scheduler
 
-* For this exercise, we want to make a portlet that utilizes the `aui-scheduler` module. There are step by step directions for the html version of [scheduler in 02-components](https://github.com/eduardolundgren/alloy-ui-exercises/tree/master/02-components#3-scheduler) that just need the changes described in the `Setup` section.
+* For this exercise, we want to make a portlet that utilizes the `aui-scheduler` module. There are step by step directions for the html version of [scheduler in 02-components](../02-components#3-scheduler) that just need the changes described in the `Setup` section.
 
-* Use the linked directions above or adapt the completed file [03-scheduler.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/03-scheduler.html) into a portlet.
+* Use the linked directions above or adapt the completed file [03-scheduler.html](../02-components/03-scheduler.html) into a portlet.
 
-**Completed jsp: [04-scheduler.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/04-scheduler.jsp)**
+**Completed jsp: [04-scheduler.jsp](04-scheduler.jsp)**
 
 **Completed portlet: [04-scheduler-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/04-scheduler-portlet)**
 
 ## 5. Form Validator
 
-* For this exercise, we want to validate the data input into a form, much like the [form validator in 02-components](https://github.com/eduardolundgren/alloy-ui-exercises/tree/master/02-components#5-form-validator).
+* For this exercise, we want to validate the data input into a form, much like the [form validator in 02-components](../02-components#5-form-validator).
 
-* Use the directions above or start with the completed file for [05-form-validator.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/05-form-validator.html) and try to format the code for a portlet. Use unique `id` and `name` attributes for each field such as `portlet05_email` instead of just `email`.
+* Use the directions above or start with the completed file for [05-form-validator.html](../02-components/05-form-validator.html) and try to format the code for a portlet. Use unique `id` and `name` attributes for each field such as `portlet05_email` instead of just `email`.
 
-**Completed jsp: [05-form-validator.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/05-form-validator.jsp)**
+**Completed jsp: [05-form-validator.jsp](05-form-validator.jsp)**
 
 **Completed portlet: [05-form-validator-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/05-form-validator-portlet)**
 
 ## 6. Registration Form
 
-* We want to develop a registration form much like the [registration form in 02-components](https://github.com/eduardolundgren/alloy-ui-exercises/tree/master/02-components#6-registration-form), but this time as a portlet.
+* We want to develop a registration form much like the [registration form in 02-components](../02-components#6-registration-form), but this time as a portlet.
 
-* Follow the directions above or adapt [06-registration-form.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/02-components/06-registration-form.html) to be used in a porlet.
+* Follow the directions above or adapt [06-registration-form.html](../02-components/06-registration-form.html) to be used in a porlet.
 
-**Completed jsp: [06-registration-form.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/06-registration-form.jsp)**
+**Completed jsp: [06-registration-form.jsp](06-registration-form.jsp)**
 
 **Completed portlet: [06-registration-form-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/06-registration-form-portlet)**
 
@@ -248,7 +248,7 @@ Exercises using AlloyUI components inside of Liferay Portal. The content of many
 
 * Deploy this portlet and add it to your portal instance to see it running. Use your browser inspector to see how the taglib code was transformed into regular html.
 
-**Completed jsp: [07-taglib.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/07-taglib.jsp)**
+**Completed jsp: [07-taglib.jsp](07-taglib.jsp)**
 
 **Completed portlet: [07-taglib-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/07-taglib-portlet)**
 
@@ -348,7 +348,7 @@ Exercises using AlloyUI components inside of Liferay Portal. The content of many
 
 * Deploy the portlet and try out the form. Put incorrect and correct types of data in, or try leaving out required information to see how the portlet responds.
 
-**Completed jsp: [08-validator-taglib.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/08-validator-taglib.jsp)**
+**Completed jsp: [08-validator-taglib.jsp](08-validator-taglib.jsp)**
 
 **Completed portlet: [08-validator-taglib-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/08-validator-taglib-portlet)**
 
@@ -378,7 +378,7 @@ Exercises using AlloyUI components inside of Liferay Portal. The content of many
 
 * Deploy the portlet and add it to your portal instance. Open the console in your browser. You should see an `<input>` node logged to the console.
 
-**Completed jsp: [09-aui-script-taglib.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/09-aui-script-taglib.jsp)**
+**Completed jsp: [09-aui-script-taglib.jsp](09-aui-script-taglib.jsp)**
 
 **Completed portlet: [09-aui-script-taglib-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/09-aui-script-taglib-portlet)**
 
@@ -408,7 +408,7 @@ Exercises using AlloyUI components inside of Liferay Portal. The content of many
 
 > Read more about `A.one()` and `A.all()` and their return types [here](https://www.liferay.com/web/nathan.cavanaugh/blog/-/blogs/alloyui-working-with-elements-and-events)
 
-**Completed jsp: [10-aui-script-use-taglib.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/10-aui-script-use-taglib.jsp)**
+**Completed jsp: [10-aui-script-use-taglib.jsp](10-aui-script-use-taglib.jsp)**
 
 **Completed portlet: [10-aui-script-use-taglib-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/10-aui-script-use-taglib-portlet)**
 
@@ -446,7 +446,7 @@ Exercises using AlloyUI components inside of Liferay Portal. The content of many
 
 * Deploy the portlet and add it to your portal instance. Open your browser console. You should see a Node object logged to the console when you click the `OK` button.
 
-**Completed jsp: [11-aui-script-position-taglib.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/11-aui-script-position-taglib.jsp)**
+**Completed jsp: [11-aui-script-position-taglib.jsp](11-aui-script-position-taglib.jsp)**
 
 **Completed portlet: [11-aui-script-position-taglib-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/11-aui-script-position-taglib-portlet)**
 
@@ -620,7 +620,7 @@ onSubmit='<%= "event.preventDefault(); portlet12_generateOutput();" %>'
 
 * Deploy this portlet and try submitting some data. If it is all correct, you should see a message displayed at the bottom of the portlet with the information you entered.
 
-**Completed jsp: [12-liferay-provide.jsp](https://github.com/eduardolundgren/alloy-ui-exercises/blob/documentation/03-liferay/12-liferay-provide.jsp)**
+**Completed jsp: [12-liferay-provide.jsp](12-liferay-provide.jsp)**
 
 **Completed portlet: [12-liferay-provide-portlet](https://github.com/noellekimiko/liferay-plugins/tree/6.2.x-alloyUI-practice/portlets/12-liferay-provide-portlet)**
 

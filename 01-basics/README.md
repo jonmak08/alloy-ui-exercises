@@ -64,7 +64,7 @@ Basic examples using YUI components. AUI is built on YUI, so it is useful to be 
 
 * Open this file in any web browser to see the results. There is only a heading for now, but in the following exercises there will be additional content. You should follow these steps to set up your files for each of the exercises.
 
-**Completed example: [01-setup.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/01-setup.html)**
+**Completed example: [01-setup.html](01-setup.html)**
 
 ## 2. DOM Traversal
 
@@ -137,7 +137,7 @@ Basic examples using YUI components. AUI is built on YUI, so it is useful to be 
 
 * Note that in this exercise, we did not actually use any methods from the node module. YUI's base code defines `.one()` and `.all()`. It is used here to familiarize you with where modules are loaded, and we will use methods from `node` in the next exercise.
 
-**Completed example: [02-dom-traversal.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/02-dom-traversal.html)**
+**Completed example: [02-dom-traversal.html](02-dom-traversal.html)**
 
 ## 3. DOM Manipulation
 
@@ -186,7 +186,7 @@ YUI().use('node', function(Y) {
 
 * Notice that changes inside the `<script>` tags are applied as soon as this code is loaded, so the original text and style of our `foo` element are basically not visible.
 
-**Completed example: [03-dom-manipulation.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/03-dom-manipulation.html)**
+**Completed example: [03-dom-manipulation.html](03-dom-manipulation.html)**
 
 ## 4. Events
 
@@ -261,7 +261,7 @@ YUI().use('node', 'event', function(Y) {
 
 * Now, the text inside the `foo` element will change when it is clicked.
 
-**Completed example: [04-events.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/04-events.html)**
+**Completed example: [04-events.html](04-events.html)**
 
 ## 5. Effects
 
@@ -341,7 +341,7 @@ YUI().use('transition', function(Y) {
 
 * To see more possible configurations for the transition module, checkout the YUI docs [here](https://yuilibrary.com/yui/docs/transition/).
 
-**Completed example: [05-effects.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/05-effects.html)**
+**Completed example: [05-effects.html](05-effects.html)**
 
 ## 6. Ajax
 
@@ -359,7 +359,7 @@ YUI().use('transition', function(Y) {
 
 * Navigate to your `C:/xampp/htdocs` directory. Let's make a folder for this exercise, called `alloy-ui-exercises`. Then create the file for this exercise as always, with the title and heading `Alloy UI - Ajax`.
 
-* We will also put the content that we want to load into this file. Copy [this file](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/assets/content.html) into the folder and save it as `content.html`.
+* We will also put the content that we want to load into this file. Copy [this file](../assets/content.html) into the folder and save it as `content.html`.
 
 * In this exercise, we want content to be loaded into our mainpage from `content.html`. Let's first put in a loading message and then replace this message with the content once it is loaded.
 
@@ -441,7 +441,7 @@ YUI().use('transition', function(Y) {
 
 * Be sure to stop your XAMPP server when you are finished.
 
-**Completed example: [06-ajax.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/06-ajax.html)**
+**Completed example: [06-ajax.html](06-ajax.html)**
 > Note: The completed example uses relative paths, and will not run correctly if you just open the file with a web browser
 
 ## 7. Node
@@ -526,7 +526,7 @@ YUI().use('transition', function(Y) {
 </script>
 ```
 
-**Completed example: [07-node.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/07-node.html)**
+**Completed example: [07-node.html](07-node.html)**
 
 ## 8. Show/Hide
 
@@ -603,4 +603,4 @@ YUI().use('transition', function(Y) {
 
 * Read more about how `.toggleView()` works [here](http://yuilibrary.com/yui/docs/node/node-view.html).
 
-**Completed example: [08-show-hide.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/08-show-hide.html)**
+**Completed example: [08-show-hide.html](08-show-hide.html)**
