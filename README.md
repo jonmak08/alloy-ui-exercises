@@ -17,6 +17,10 @@ Exercises using AlloyUI components in HTML documents
 
 Examples of AlloyUI to be used in custom Liferay portlets
 
+### [04-liferay-alloy-demos](https://github.com/eduardolundgren/alloy-ui-exercises/tree/master/04-liferay-alloy-demos)
+
+Examples of AlloyUI modules used in Liferay Portal
+
 ### [assets](https://github.com/eduardolundgren/alloy-ui-exercises/tree/master/assets)
 
 Content used for [06-ajax.html](https://github.com/eduardolundgren/alloy-ui-exercises/blob/master/01-basics/06-ajax.html) in the basics section

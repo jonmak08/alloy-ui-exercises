@@ -1,7 +1,7 @@
 Responsive Carousel
 ==================
 
-Responsive Carousel for use within Liferay theme
+In this exercise, we will demonstrate how to make the AUI Carousel responsive within a Liferay theme.
 
 ## Table of contents
 
@@ -9,9 +9,11 @@ Responsive Carousel for use within Liferay theme
 
 ## Setup
 
-Take all provided files and drag them to a new theme in Liferay Plugins SDK to the following directories.
+* Create a new theme in the Liferay Plugins SDK.
 
-* newtheme
+* Place all the provided files in the following directories:
+
+* newTheme
 	* _diffs
 		* css
 			* **custom.css**
@@ -19,6 +21,6 @@ Take all provided files and drag them to a new theme in Liferay Plugins SDK to t
 			* **carousel.vm**
 			* **portal_normal.vm**
 
-Then navigate to the root directory of your new theme in terminal/command prompt and deploy with `ant all`
+* Now navigate to the root directory of your new theme in the terminal and deploy the theme with the updates by running hte command `ant all`.
 
 > **Note:** This example for a responsive Alloy Carousel is intended for use with Liferay Portal 6.2
