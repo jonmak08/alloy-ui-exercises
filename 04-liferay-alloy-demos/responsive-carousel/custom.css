@@ -1,6 +1,7 @@
 @import "mixins";
 
 .carousel-content {
+	overflow: hidden;
 	position: relative;
 
 	.carousel-item {
